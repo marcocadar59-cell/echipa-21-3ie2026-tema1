@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma Café — Acasă</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+
+<meta name="description" content="Cafenea modernă - cafea premium și deserturi">
+<meta name="keywords" content="cafenea, cafea, deserturi">
+<meta property="og:title" content="Cafenea">
+<meta property="og:image" content="img/hero-bg.jpg">
+
+</head>
+<body>
+
+<div id="loader" style="position:fixed;inset:0;background:#fff;display:flex;align-items:center;justify-content:center;z-index:9999;">
+<div style="width:30px;height:30px;border:3px solid #ccc;border-top:3px solid #333;border-radius:50%;animation:spin 1s linear infinite;"></div>
+</div>
+
+
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Aroma <span>Café</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="meniu.html">Meniu</a></li>
+        <li><a href="despre.html">Despre noi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Meniu mobil">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Navigare mobilă">
+    <button class="mobile-close" id="mobileClose" aria-label="Închide meniu">✕</button>
+    <a href="index.html">Acasă</a>
+    <a href="meniu.html">Meniu</a>
+    <a href="despre.html">Despre noi</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-image"></div>
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag">☕ Timișoara, din 2010</span>
+        <h1>Fiecare ceașcă spune<br>o <em>poveste</em> unică</h1>
+        <p>
+          La Aroma Café, credem că o cafea bună nu este doar o băutură —
+          este o experiență. Vino să descoperi boabe selecționate din întreaga
+          lume, preparate cu pasiune de baristele noastre.
+        </p>
+        <div class="hero-actions">
+          <a href="meniu.html" class="btn btn-primary">Explorează meniul</a>
+          <a href="contact.html" class="btn btn-outline">Rezervă o masă</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+      <span>Derulează</span>
+    </div>
+  </section>
+
+  <section class="features-strip">
+    <div class="features-grid">
+      <article class="feature-item">
+        <div class="feature-icon">🌍</div>
+        <div class="feature-text">
+          <h3>Boabe de origine</h3>
+          <p>Selectăm direct de la fermieri din Etiopia, Columbia și Guatemala pentru un gust autentic.</p>
+        </div>
+      </article>
+      <article class="feature-item">
+        <div class="feature-icon">🏅</div>
+        <div class="feature-text">
+          <h3>Baristele certificate</h3>
+          <p>Echipa noastră deține certificări SCA și participă anual la competiții internaționale.</p>
+        </div>
+      </article>
+      <article class="feature-item">
+        <div class="feature-icon">🌱</div>
+        <div class="feature-text">
+          <h3>Sustenabilitate</h3>
+          <p>Ambalaje biodegradabile, lapte local și practici etice față de producători.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images" aria-hidden="true">
+          <div class="about-img-main"></div>
+          <div class="about-img-accent"></div>
+          <div class="about-badge">14<small>ani<br>experienţă</small></div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">Povestea noastră</h2>
+          <div class="divider"></div>
+          <p>
+            Aroma Café s-a născut în 2010 dintr-o pasiune simplă: credința că
+            fiecare om merită o cafea excepțională. Am deschis primul nostru local
+            pe strada Mărășești din Timișoara cu doar patru mese și un vis mare.
+          </p>
+          <p>
+            Astăzi servim peste 400 de clienți zilnic, dar spiritul rămâne același —
+            fiecare ceașcă este preparată cu aceeași grijă ca prima. Am păstrat
+            rețetele originale, am adăugat inovație acolo unde contează și am creat
+            un loc în care te simți acasă.
+          </p>
+          <p>
+            Folosim exclusiv boabe specialty coffee, prăjite artizanal în propriul
+            nostru atelier din spatele cafenelei. Poți vedea și mirosi procesul
+            în fiecare dimineață.
+          </p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">400+</span><span class="stat-label">Clienți/zi</span></div>
+            <div class="stat"><span class="stat-num">18</span><span class="stat-label">Origini cafea</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Premii naționale</span></div>
+          </div>
+          <br>
+          <a href="despre.html" class="btn btn-dark">Află mai mult</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-preview">
+    <div class="container">
+      <h2 class="section-title">Din meniul nostru</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">De la espresso clasic la preparate cu lapte din surse locale — avem ceva pentru fiecare gust.</p>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-cat="all">Toate</button>
+        <button class="tab-btn" data-cat="cafea">Cafea</button>
+        <button class="tab-btn" data-cat="dulce">Dulciuri</button>
+        <button class="tab-btn" data-cat="savuros">Savuros</button>
+      </div>
+
+      <div class="menu-grid">
+ 
+        <article class="menu-card" data-cat="cafea">
+          <div class="menu-card-img" style="background-image:url('img/espresso.jpg'); background-color:#4a2c0a;"></div>
+          <div class="menu-card-body">
+            <h3>Espresso Signature</h3>
+            <p>Blend proprietar 70% Arabica / 30% Robusta, prăjit mediu-intens. Note de ciocolată și coacăze.</p>
+            <div class="menu-card-footer">
+              <span class="price">9 lei</span>
+              <a href="meniu.html" class="btn btn-primary" style="padding:8px 18px;font-size:0.8rem;">Detalii</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-cat="cafea">
+          <div class="menu-card-img" style="background-image:url('img/latte.jpg'); background-color:#6b3a1f;"></div>
+          <div class="menu-card-body">
+            <h3>Caffe Latte cu Lavandă</h3>
+            <p>Espresso dublu, lapte spumat artizanal și sirop de lavandă produs local. Reconfortant și floral.</p>
+            <div class="menu-card-footer">
+              <span class="price">17 lei</span>
+              <a href="meniu.html" class="btn btn-primary" style="padding:8px 18px;font-size:0.8rem;">Detalii</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-cat="dulce">
+          <div class="menu-card-img" style="background-image:url('img/croissant.jpg'); background-color:#8b5e3c;"></div>
+          <div class="menu-card-body">
+            <h3>Croissant cu Unt și Miere</h3>
+            <p>Preparat proaspăt în fiecare dimineață, cu unt frantuzesc și miere de salcâm din Banat.</p>
+            <div class="menu-card-footer">
+              <span class="price">14 lei</span>
+              <a href="meniu.html" class="btn btn-primary" style="padding:8px 18px;font-size:0.8rem;">Detalii</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-cat="cafea">
+          <div class="menu-card-img" style="background-image:url('img/cold-brew.jpg'); background-color:#2a1505;"></div>
+          <div class="menu-card-body">
+            <h3>Cold Brew Ethiopian</h3>
+            <p>Infuzat 18 ore la rece din boabe single-origin Sidama. Fructat, proaspăt, fără zahăr adăugat.</p>
+            <div class="menu-card-footer">
+              <span class="price">19 lei</span>
+              <a href="meniu.html" class="btn btn-primary" style="padding:8px 18px;font-size:0.8rem;">Detalii</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-cat="dulce">
+          <div class="menu-card-img" style="background-image:url('img/tiramisu.jpg'); background-color:#5c3317;"></div>
+          <div class="menu-card-body">
+            <h3>Tiramisu Aroma</h3>
+            <p>Rețeta casei cu mascarpone, savoiarde înmuiate în espresso și cacao Valrhona. Porție generoasă.</p>
+            <div class="menu-card-footer">
+              <span class="price">22 lei</span>
+              <a href="meniu.html" class="btn btn-primary" style="padding:8px 18px;font-size:0.8rem;">Detalii</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-cat="savuros">
+          <div class="menu-card-img" style="background-image:url('img/avocado.jpg'); background-color:#3a5c2a;"></div>
+          <div class="menu-card-body">
+            <h3>Toast Avocado &amp; Ouă</h3>
+            <p>Pâine de secară prăjită cu avocado, ouă ochiuri, semințe de cânepă și floricele de sare.</p>
+            <div class="menu-card-footer">
+              <span class="price">28 lei</span>
+              <a href="meniu.html" class="btn btn-primary" style="padding:8px 18px;font-size:0.8rem;">Detalii</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center; margin-top:48px;">
+        <a href="meniu.html" class="btn btn-dark">Vezi meniul complet</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Ce spun clienții noștri</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Suntem mândri de comunitatea pe care am construit-o în 14 ani de cafea și conversații.</p>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Cel mai bun espresso din Timișoara, fără discuție. Personalul este mereu primitor și atmosfera te face să vrei să rămâi ore întregi cu laptopul sau o carte bună."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div class="reviewer-info"><strong>Andrei Moldovan</strong><span>Client fidel din 2015</span></div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Am descoperit Aroma Café prin recomandarea unui prieten și de atunci nu mai plec din oraș fără să trec pe aici. Latte-ul cu lavandă este pur și simplu divin."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">M</div>
+            <div class="reviewer-info"><strong>Maria Ionescu</strong><span>Instagram: @maria_saveurs</span></div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Ca profesionist în industria horeca, apreciez extrem de mult atenția la detalii — de la selecția boabelor până la prezentarea finală. Mult succes în continuare!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">R</div>
+            <div class="reviewer-info"><strong>Radu Popa</strong><span>Chef &amp; Food Blogger</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Rezervă-ți masa astăzi</h2>
+      <p>Planifică o vizită și bucură-te de o experiență cafea de neuitat. Suntem deschiși 7 zile din 7.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">Rezervare online</a>
+        <a href="tel:+40256123456" class="btn btn-outline">📞 0256 123 456</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Aroma <span>Café</span></a>
+          <p>Un loc unde fiecare ceașcă este preparată cu grijă, fiecare client este tratat ca un prieten și fiecare vizită devine o amintire plăcută.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="TikTok">▶</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigare</h4>
+          <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="meniu.html">Meniu complet</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+            <li><a href="contact.html">Contact &amp; Rezervări</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Program</h4>
+          <ul>
+            <li><a>Luni – Vineri: 07:00 – 22:00</a></li>
+            <li><a>Sâmbătă: 08:00 – 23:00</a></li>
+            <li><a>Duminică: 09:00 – 21:00</a></li>
+          </ul>
+          <h4 style="margin-top:20px;">Contact</h4>
+          <ul>
+            <li><a href="tel:+40256123456">0256 123 456</a></li>
+            <li><a href="mailto:hello@aromacafe.ro">hello@aromacafe.ro</a></li>
+            <li><a>Str. Mărășești 14, Timișoara</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Aroma Café. Toate drepturile rezervate. Realizat cu ☕ în Timișoara.</p>
+      </div>
+    </div>
+  
+<div class="social">
+<a href="https://facebook.com" target="_blank">Facebook</a>
+<a href="https://instagram.com" target="_blank">Instagram</a>
+<a href="https://tiktok.com" target="_blank">TikTok</a>
+</div>
+
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

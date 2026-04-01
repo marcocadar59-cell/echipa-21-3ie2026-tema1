@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma Café — Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+
+<meta name="description" content="Cafenea modernă - cafea premium și deserturi">
+<meta name="keywords" content="cafenea, cafea, deserturi">
+<meta property="og:title" content="Cafenea">
+<meta property="og:image" content="img/hero-bg.jpg">
+
+</head>
+<body>
+
+<div id="loader" style="position:fixed;inset:0;background:#fff;display:flex;align-items:center;justify-content:center;z-index:9999;">
+<div style="width:30px;height:30px;border:3px solid #ccc;border-top:3px solid #333;border-radius:50%;animation:spin 1s linear infinite;"></div>
+</div>
+
+
+ 
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Aroma <span>Café</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="meniu.html">Meniu</a></li>
+        <li><a href="despre.html">Despre noi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Meniu mobil">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <a href="index.html">Acasă</a>
+    <a href="meniu.html">Meniu</a>
+    <a href="despre.html">Despre noi</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  
+  <header class="page-hero">
+    <div class="container">
+      <h1>Contact &amp; Rezervări</h1>
+      <p>Ne bucurăm să te auzim. Vino să ne vizitezi sau scrie-ne!</p>
+    </div>
+  </header>
+
+  
+  <main class="contact-page">
+    <div class="container">
+      <div class="contact-grid">
+
+        
+        <section aria-labelledby="contact-info-heading">
+          <h2 id="contact-info-heading">Vino să ne vizitezi!</h2>
+          <p>Suntem pe strada Mărășești, la doar 5 minute de Piața Victoriei. Ușa noastră este mereu deschisă.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-text">
+              <strong>Adresă</strong>
+              <span>Str. Mărășești nr. 14, Timișoara 300086, România</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div class="contact-detail-text">
+              <strong>Telefon</strong>
+              <span><a href="tel:+40256123456" style="color:var(--color-caramel)">0256 123 456</a></span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <span><a href="mailto:hello@aromacafe.ro" style="color:var(--color-caramel)">hello@aromacafe.ro</a></span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕐</div>
+            <div class="contact-detail-text">
+              <strong>Program de lucru</strong>
+              <div class="hours-grid">
+                <span>Luni</span><span>07:00 – 22:00</span>
+                <span>Marți</span><span>07:00 – 22:00</span>
+                <span>Miercuri</span><span>07:00 – 22:00</span>
+                <span>Joi</span><span>07:00 – 22:00</span>
+                <span>Vineri</span><span>07:00 – 23:00</span>
+                <span>Sâmbătă</span><span>08:00 – 23:00</span>
+                <span>Duminică</span><span>09:00 – 21:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🚗</div>
+            <div class="contact-detail-text">
+              <strong>Parcare</strong>
+              <span>Parcare gratuită disponibilă pe strada Mărășești (locuri limitate). Alternativ, parcare publică la 200m.</span>
+            </div>
+          </div>
+        </section>
+
+        
+        <section aria-labelledby="form-heading">
+          <div class="contact-form-card">
+            <h2 id="form-heading">Trimite-ne un mesaj</h2>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">Prenume *</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="Ion" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Nume *</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Popescu" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Adresă email *</label>
+                <input type="email" id="email" name="email" placeholder="ion.popescu@email.ro" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="07xx xxx xxx" />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subiect *</label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>Selectează un subiect...</option>
+                  <option value="rezervare">Rezervare masă / eveniment privat</option>
+                  <option value="feedback">Feedback sau recenzie</option>
+                  <option value="colaborare">Propunere de colaborare</option>
+                  <option value="cafea">Întrebare despre cafea sau meniu</option>
+                  <option value="altele">Altele</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="date">Data vizitei (opțional)</label>
+                <input type="date" id="date" name="date" />
+              </div>
+
+              <div class="form-group">
+                <label for="persoane">Număr persoane (pentru rezervări)</label>
+                <select id="persoane" name="persoane">
+                  <option value="">Selectează...</option>
+                  <option value="1">1 persoană</option>
+                  <option value="2">2 persoane</option>
+                  <option value="3-4">3–4 persoane</option>
+                  <option value="5-8">5–8 persoane</option>
+                  <option value="9+">9+ persoane (eveniment privat)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mesaj *</label>
+                <textarea id="message" name="message" placeholder="Scrie-ne mesajul tău..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Trimite mesajul ✉️
+              </button>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <div class="success-icon">✅</div>
+              <h3>Mesaj trimis cu succes!</h3>
+              <p>Îți mulțumim pentru mesaj. Îți vom răspunde în maxim 24 de ore la adresa de email furnizată.</p>
+              <br>
+              <a href="index.html" class="btn btn-dark">Înapoi acasă</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  
+  <section class="map-section">
+    <div class="container">
+      <div class="map-placeholder" role="img" aria-label="Hartă locație Aroma Café">
+        <span style="font-size:3rem;">🗺️</span>
+        <p>Str. Mărășești 14, Timișoara</p>
+        <p style="font-size:0.82rem;">Inserați iframe Google Maps după integrare în server local</p>
+        <a href="https://maps.google.com/?q=Timisoara+Str+Marasesti+14" target="_blank" class="btn btn-dark" style="margin-top:12px;">
+          Deschide în Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Aroma <span>Café</span></a>
+          <p>Un loc unde fiecare ceașcă este preparată cu grijă, fiecare client este tratat ca un prieten și fiecare vizită devine o amintire plăcută.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="TikTok">▶</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigare</h4>
+          <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="meniu.html">Meniu complet</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+            <li><a href="contact.html">Contact &amp; Rezervări</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Program</h4>
+          <ul>
+            <li><a>Luni – Vineri: 07:00 – 22:00</a></li>
+            <li><a>Sâmbătă: 08:00 – 23:00</a></li>
+            <li><a>Duminică: 09:00 – 21:00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Aroma Café. Toate drepturile rezervate. Realizat cu ☕ în Timișoara.</p>
+      </div>
+    </div>
+  
+<div class="social">
+<a href="https://facebook.com" target="_blank">Facebook</a>
+<a href="https://instagram.com" target="_blank">Instagram</a>
+<a href="https://tiktok.com" target="_blank">TikTok</a>
+</div>
+
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

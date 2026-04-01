@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma Café — Meniu</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+
+<meta name="description" content="Cafenea modernă - cafea premium și deserturi">
+<meta name="keywords" content="cafenea, cafea, deserturi">
+<meta property="og:title" content="Cafenea">
+<meta property="og:image" content="img/hero-bg.jpg">
+
+</head>
+<body>
+
+<div id="loader" style="position:fixed;inset:0;background:#fff;display:flex;align-items:center;justify-content:center;z-index:9999;">
+<div style="width:30px;height:30px;border:3px solid #ccc;border-top:3px solid #333;border-radius:50%;animation:spin 1s linear infinite;"></div>
+</div>
+
+
+
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Aroma <span>Café</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="meniu.html">Meniu</a></li>
+        <li><a href="despre.html">Despre noi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Meniu mobil">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <a href="index.html">Acasă</a>
+    <a href="meniu.html">Meniu</a>
+    <a href="despre.html">Despre noi</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <h1>Meniul nostru</h1>
+      <p>Selectat cu pasiune, pregătit cu precizie</p>
+    </div>
+  </header>
+
+  <main class="menu-page">
+    <div class="container">
+
+      <section class="menu-section" aria-labelledby="sect-espresso">
+        <div class="menu-section-header">
+          <div class="menu-section-icon">☕</div>
+          <div>
+            <h2 id="sect-espresso">Cafea Espresso</h2>
+            <p>Preparate clasice pe bază de espresso, extrase la 9 bar cu blenduri și single-origin selecționate.</p>
+          </div>
+        </div>
+        <div class="menu-items">
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/espresso.jpg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Espresso Signature</h3>
+                <span class="item-price">9 lei</span>
+              </div>
+              <p>Blend 70% Arabica / 30% Robusta, prăjit mediu-intens. Note de ciocolată amară și fructe roșii.</p>
+              <span class="tag tag-popular">⭐ Popular</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/espresso_dublu.jpg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Espresso Dublu</h3>
+                <span class="item-price">13 lei</span>
+              </div>
+              <p>Dublă extracție pe aceleași boabe Signature. Intens, concentrat, pentru iubitorii de cafea puternică.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/americano_d.jpg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Americano</h3>
+                <span class="item-price">11 lei</span>
+              </div>
+              <p>Espresso alungit cu apă fierbinte filtrată. Servit în ceașcă de 200ml sau 300ml.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/machiatto.jpg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Macchiato</h3>
+                <span class="item-price">10 lei</span>
+              </div>
+              <p>Espresso clasic cu o linguriță de lapte spumat. Echilibru perfect între intensitate și cremozitate.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/cortado.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Cortado</h3>
+                <span class="item-price">12 lei</span>
+              </div>
+              <p>Espresso cu cantitate egală de lapte cu abur. Origini spaniolești, preferat de cunoscători.</p>
+              <span class="tag tag-new">✨ Nou</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/flat_white.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Flat White</h3>
+                <span class="item-price">15 lei</span>
+              </div>
+              <p>Ristretto dublu cu lapte micro-spumat texturizat. Gustul cafelei domină, laptele completează perfect.</p>
+              <span class="tag tag-popular">⭐ Popular</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <hr class="menu-divider" />
+
+      <section class="menu-section" aria-labelledby="sect-specialty">
+        <div class="menu-section-header">
+          <div class="menu-section-icon">🌸</div>
+          <div>
+            <h2 id="sect-specialty">Specialty &amp; Signature</h2>
+            <p>Creații unice ale baristelor noastre, cu ingrediente naturale și combinații inedite.</p>
+          </div>
+        </div>
+        <div class="menu-items">
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/latte_lavanda.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Latte cu Lavandă</h3>
+                <span class="item-price">17 lei</span>
+              </div>
+              <p>Espresso, lapte din fermă locală spumat, sirop de lavandă artizanal. Reconfortant și floral.</p>
+              <span class="tag tag-popular">⭐ Best-seller</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/honey_cinnamoon.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Honey Cinnamon Latte</h3>
+                <span class="item-price">18 lei</span>
+              </div>
+              <p>Espresso, lapte spumat, miere de salcâm bănățeană și scorțișoară de Ceylon. Cald și aromat.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/matcha_latte.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Matcha Latte</h3>
+                <span class="item-price">19 lei</span>
+              </div>
+              <p>Matcha ceremonial japonez de gradul 1, lapte de ovăz sau lapte de vacă. Energizant natural.</p>
+              <span class="tag tag-vegan">🌿 Vegan</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/cold_ethiopian.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Cold Brew Ethiopian Sidama</h3>
+                <span class="item-price">21 lei</span>
+              </div>
+              <p>Infuzat 18h la rece, single-origin Etiopia. Note de piersică, iasomie. Fără zahăr, 100% natural.</p>
+              <span class="tag tag-new">✨ Sezonier</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/rose_espresso_tonic.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Rose Espresso Tonic</h3>
+                <span class="item-price">20 lei</span>
+              </div>
+              <p>Espresso răcit turnat în tonic cu apă tonică Fever-Tree și sirop de trandafir. Răcoritor și elegant.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/cappucino_classic.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Cappuccino Clasic</h3>
+                <span class="item-price">14 lei</span>
+              </div>
+              <p>Proporții italiene clasice: 1/3 espresso, 1/3 lapte cu abur, 1/3 spumă densă. Latte art la cerere.</p>
+              <span class="tag tag-popular">⭐ Popular</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <hr class="menu-divider" />
+
+      <section class="menu-section" aria-labelledby="sect-food">
+        <div class="menu-section-header">
+          <div class="menu-section-icon">🥐</div>
+          <div>
+            <h2 id="sect-food">Mic dejun &amp; Gustări</h2>
+            <p>Preparate proaspete zilnic, cu ingrediente locale de sezon. Perfecte alături de o cafea bună.</p>
+          </div>
+        </div>
+        <div class="menu-items">
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/croissant_unt_miere.jpg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Croissant Unt &amp; Miere</h3>
+                <span class="item-price">14 lei</span>
+              </div>
+              <p>Aluatul dospit 48h, unt frantuzesc AOP, miere de salcâm. Preparat proaspăt în fiecare dimineață.</p>
+              <span class="tag tag-popular">⭐ Popular</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/toast_avocado_oua.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Toast Avocado &amp; Ouă</h3>
+                <span class="item-price">28 lei</span>
+              </div>
+              <p>Pâine de secară prăjită, avocado piure cu lime, ouă ochiuri, semințe de cânepă și floricele de sare.</p>
+              <span class="tag tag-vegan">🌿 Vegetarian</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/pankaces_fructe_padure.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Pancakes cu Fructe de Pădure</h3>
+                <span class="item-price">26 lei</span>
+              </div>
+              <p>3 pancakes pufoase cu sirop de arțar, fructe de pădure proaspete și frișcă bătută la mână.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/tiramisu_aroma.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Tiramisu Aroma</h3>
+                <span class="item-price">22 lei</span>
+              </div>
+              <p>Rețeta casei: mascarpone Galbani, savoiarde înmuiate în espresso și cacao Valrhona. Porție generoasă.</p>
+              <span class="tag tag-popular">⭐ Best-seller</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/club_sandwich.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Sandwich Club</h3>
+                <span class="item-price">32 lei</span>
+              </div>
+              <p>Pâine brioche prăjită, pui grillat, bacon, salată, roșii cherry, sos aioli și muștar Dijon.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img" style="background-image: url('img/cheesecake_fructe_rosii.jpeg');"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Cheesecake cu Fructe Roșii</h3>
+                <span class="item-price">24 lei</span>
+              </div>
+              <p>Bază de biscuiți Digestive, cremă de brânzică Philadelphia, coulis de căpșuni și zmeură.</p>
+              <span class="tag tag-new">✨ Sezonier</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="menu-note">
+        <p>
+          ⓘ Toate produsele noastre pot conține alergeni. Vă rugăm să informați personalul despre orice intoleranță sau alergie alimentară.
+          Prețurile includ TVA. Meniul se poate modifica în funcție de sezon și disponibilitate.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Aroma <span>Café</span></a>
+          <p>Un loc unde fiecare ceașcă este preparată cu grijă, fiecare client este tratat ca un prieten și fiecare vizită devine o amintire plăcută.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="TikTok">▶</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigare</h4>
+          <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="meniu.html">Meniu complet</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+            <li><a href="contact.html">Contact &amp; Rezervări</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Program</h4>
+          <ul>
+            <li><a>Luni – Vineri: 07:00 – 22:00</a></li>
+            <li><a>Sâmbătă: 08:00 – 23:00</a></li>
+            <li><a>Duminică: 09:00 – 21:00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Aroma Café. Toate drepturile rezervate. Realizat cu ☕ în Timișoara.</p>
+      </div>
+    </div>
+  
+<div class="social">
+<a href="https://facebook.com" target="_blank">Facebook</a>
+<a href="https://instagram.com" target="_blank">Instagram</a>
+<a href="https://tiktok.com" target="_blank">TikTok</a>
+</div>
+
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

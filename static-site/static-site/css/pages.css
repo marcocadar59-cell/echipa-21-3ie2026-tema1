@@ -1,0 +1,215 @@
+/* =============================================
+   AROMA CAFÉ — About Page Styles
+   ============================================= */
+
+.story-section { padding: 90px 0; background: var(--color-white); }
+.story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.story-img {
+  border-radius: 4px;
+  height: 420px;
+  background: url('../img/story.jpg') center/cover no-repeat;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.story-img::after {
+  content: '"Café este arta de a trăi momentul prezent"';
+  position: absolute;
+  bottom: -24px; right: -24px;
+  background: var(--color-caramel);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 0.88rem;
+  padding: 18px 22px;
+  border-radius: var(--radius);
+  max-width: 200px;
+  line-height: 1.4;
+  box-shadow: var(--shadow);
+}
+.story-text .section-title, .story-text h2 { text-align: left; color: var(--color-brown); }
+.story-text .divider { margin: 0 0 20px; }
+.story-text p { margin-bottom: 16px; }
+
+/* Team */
+.team-section { padding: 90px 0; background: var(--color-cream); }
+.team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; }
+.team-card {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform var(--transition);
+}
+.team-card:hover { transform: translateY(-6px); }
+.team-photo {
+  height: 240px;
+  background: var(--color-brown) center/cover no-repeat;
+}
+.team-info { padding: 24px; }
+.team-info h3 { color: var(--color-brown); margin-bottom: 6px; font-size: 1.2rem; }
+.team-role { color: var(--color-caramel); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 12px; display: block; }
+.team-info p { font-size: 0.88rem; }
+
+/* Values */
+.values-section { padding: 90px 0; background: var(--color-brown); }
+.values-section .section-title { color: var(--color-cream); }
+.values-section .section-subtitle { color: rgba(245,239,230,0.7); }
+.values-section .divider { background: var(--color-caramel); }
+.values-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+.value-card {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius);
+  padding: 36px 24px;
+  text-align: center;
+  transition: background var(--transition);
+}
+.value-card:hover { background: rgba(255,255,255,0.13); }
+.value-icon { font-size: 2.2rem; margin-bottom: 16px; }
+.value-card h3 { color: var(--color-accent); margin-bottom: 12px; font-size: 1.1rem; }
+.value-card p { color: rgba(245,239,230,0.75); font-size: 0.88rem; }
+
+/* Timeline */
+.timeline-section { padding: 90px 0; background: var(--color-white); }
+.timeline { position: relative; padding: 0; max-width: 700px; margin: 0 auto; }
+.timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: rgba(59,31,10,0.15); transform: translateX(-50%); }
+.timeline-item { display: flex; gap: 32px; margin-bottom: 48px; position: relative; }
+.timeline-item:nth-child(even) { flex-direction: row-reverse; }
+.timeline-content {
+  flex: 1;
+  background: var(--color-cream);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  border: 1px solid rgba(59,31,10,0.08);
+}
+.timeline-year {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-caramel);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.timeline-content h3 { color: var(--color-brown); margin-bottom: 8px; font-size: 1rem; }
+.timeline-content p { font-size: 0.88rem; }
+.timeline-dot {
+  width: 14px; height: 14px;
+  background: var(--color-caramel);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%; top: 24px;
+  transform: translateX(-50%);
+  border: 3px solid var(--color-white);
+  box-shadow: 0 0 0 3px var(--color-caramel);
+  flex-shrink: 0;
+}
+
+/* =============================================
+   AROMA CAFÉ — Contact Page Styles
+   ============================================= */
+
+.contact-page { padding: 80px 0 100px; background: var(--color-white); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; align-items: start; }
+
+.contact-info h2 { color: var(--color-brown); margin-bottom: 18px; }
+.contact-info > p { margin-bottom: 36px; }
+.contact-detail { display: flex; gap: 16px; margin-bottom: 28px; align-items: flex-start; }
+.contact-detail-icon {
+  width: 46px; height: 46px;
+  background: var(--color-cream);
+  border: 2px solid var(--color-caramel);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.contact-detail-text strong { display: block; color: var(--color-brown); font-size: 0.9rem; margin-bottom: 4px; }
+.contact-detail-text span { color: var(--color-muted); font-size: 0.9rem; }
+
+.hours-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; margin-top: 8px; }
+.hours-grid span { font-size: 0.88rem; color: var(--color-muted); }
+.hours-grid span:nth-child(odd) { color: var(--color-text); font-weight: 700; }
+
+/* Contact Form */
+.contact-form-card {
+  background: var(--color-cream);
+  border-radius: 8px;
+  padding: 42px 40px;
+  box-shadow: var(--shadow);
+}
+.contact-form-card h2 { color: var(--color-brown); margin-bottom: 28px; font-size: 1.7rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--color-brown);
+  margin-bottom: 7px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--color-white);
+  border: 1.5px solid rgba(59,31,10,0.15);
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  transition: border-color var(--transition), box-shadow var(--transition);
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--color-caramel);
+  box-shadow: 0 0 0 3px rgba(196,125,58,0.15);
+}
+.form-group textarea { resize: vertical; min-height: 130px; }
+.form-submit { width: 100%; padding: 15px; font-size: 0.95rem; }
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 32px;
+}
+.form-success .success-icon { font-size: 3rem; margin-bottom: 16px; }
+.form-success h3 { color: var(--color-brown); margin-bottom: 10px; }
+
+/* Map placeholder */
+.map-section { padding: 0 0 80px; }
+.map-placeholder {
+  background: var(--color-cream);
+  border-radius: var(--radius);
+  height: 340px;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  border: 2px dashed rgba(59,31,10,0.15);
+}
+.map-placeholder p { color: var(--color-muted); font-size: 0.95rem; }
+
+/* Responsive */
+@media (max-width: 960px) {
+  .story-grid { grid-template-columns: 1fr; }
+  .story-img { height: 300px; }
+  .story-img::after { display: none; }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .values-grid { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .timeline::before { left: 20px; }
+  .timeline-item, .timeline-item:nth-child(even) { flex-direction: column; padding-left: 44px; }
+  .timeline-dot { left: 20px; }
+  .contact-form-card { padding: 28px 22px; }
+}
+
+@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
