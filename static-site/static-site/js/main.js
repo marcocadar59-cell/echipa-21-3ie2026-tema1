@@ -1,10 +1,7 @@
-/* =============================================
-   AROMA CAFÉ — Main JavaScript
-   ============================================= */
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ---- HAMBURGER MENU ---- */
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
   const mobileClose = document.getElementById('mobileClose');
@@ -31,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---- ACTIVE NAV LINK ---- */
   var currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(function (link) {
     var href = link.getAttribute('href');
@@ -40,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ---- MENU TAB FILTER (Home page) ---- */
   var tabBtns = document.querySelectorAll('.tab-btn');
   var menuCards = document.querySelectorAll('.menu-card');
   if (tabBtns.length) {
@@ -60,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---- CONTACT FORM ---- */
+
   var contactForm = document.getElementById('contactForm');
   var formSuccess = document.getElementById('formSuccess');
   if (contactForm) {
@@ -81,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---- SCROLL ANIMATIONS ---- */
+
   var animElements = document.querySelectorAll('.menu-card, .review-card, .team-card, .value-card, .menu-item, .feature-item');
   if ('IntersectionObserver' in window) {
     var observer = new IntersectionObserver(function (entries) {
@@ -101,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---- STICKY NAV SHADOW ---- */
   var navbar = document.getElementById('navbar');
   if (navbar) {
     window.addEventListener('scroll', function () {
